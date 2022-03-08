@@ -10,8 +10,12 @@
         <module name="demo-strategy" />
         <module name="demo-degrade" />
         <module name="demo-pool" />
+        <module name="demo-mybatis-cursor" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="demo-exception-assert" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

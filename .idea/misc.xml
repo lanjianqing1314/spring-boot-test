@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/demo-degrade/pom.xml" />
         <option value="$PROJECT_DIR$/demo-strategy/pom.xml" />
         <option value="$PROJECT_DIR$/demo-pool/pom.xml" />
+        <option value="$PROJECT_DIR$/demo-mybatis-cursor/pom.xml" />
       </list>
     </option>
   </component>
