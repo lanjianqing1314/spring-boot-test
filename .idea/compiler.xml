@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="demo-strategy" />
+        <module name="demo-mybatis-webflux" />
         <module name="demo-degrade" />
         <module name="demo-pool" />
         <module name="demo-mybatis-cursor" />
