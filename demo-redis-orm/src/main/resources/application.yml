@@ -1,0 +1,7 @@
+spring:
+  redis:
+    password: icommon@4685
+    sentinel:
+      database: 0
+      master: sentinel-10.176.8.118-6379
+      nodes: 10.176.8.120:6379, 10.176.8.121:6379, 10.176.8.122:6379
