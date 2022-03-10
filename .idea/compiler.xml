@@ -11,6 +11,7 @@
         <module name="demo-mybatis-webflux" />
         <module name="demo-degrade" />
         <module name="demo-flinkcdc-kafka-mysql" />
+        <module name="demo-redis-orm" />
         <module name="demo-pool" />
         <module name="demo-mybatis-cursor" />
       </profile>
@@ -23,6 +24,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="demo-degrade" options="-parameters" />
       <module name="demo-pool" options="-parameters" />
+      <module name="demo-redis-orm" options="-parameters" />
       <module name="demo-strategy" options="-parameters" />
     </option>
   </component>

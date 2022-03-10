@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/demo-mybatis-cursor/pom.xml" />
         <option value="$PROJECT_DIR$/demo-mybatis-webflux/pom.xml" />
         <option value="$PROJECT_DIR$/demo-flinkcdc-kafka-mysql/pom.xml" />
+        <option value="$PROJECT_DIR$/demo-redis-orm/pom.xml" />
       </list>
     </option>
   </component>
