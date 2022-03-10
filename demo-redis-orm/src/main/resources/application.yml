@@ -1,7 +1,7 @@
 spring:
   redis:
-    password: icommon@4685
-    sentinel:
-      database: 0
-      master: sentinel-10.176.8.118-6379
-      nodes: 10.176.8.120:6379, 10.176.8.121:6379, 10.176.8.122:6379
+    host: myip # Redis服务器地址
+    database: 0 # Redis数据库索引（默认为0）
+    port: 6376 # Redis服务器连接端口
+    password:  # Redis服务器连接密码（默认为空）
+    timeout: 3000ms # 连接超时时间

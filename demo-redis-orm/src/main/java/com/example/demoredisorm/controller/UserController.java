@@ -28,17 +28,17 @@ public class UserController {
     }
 
     @DeleteMapping("api/user/deleteById/{id}")
-    public void deleteById(@RequestParam Long id) {
+    public void deleteById(@PathVariable Long id) {
         userService.deleteById(id);
     }
 
     @GetMapping("api/user/selectById/{id}")
-    public UserVO selectById(@RequestParam Long id) {
+    public UserVO selectById(@PathVariable Long id) {
         return userService.selectById(id);
     }
 
     @GetMapping("api/user/selectPage/{pageNum}/{pageSize}")
-    public Page<User> selectPage(@RequestParam(defaultValue = "0") Integer pageNum, @RequestParam(defaultValue = "10") Integer pageSize) {
+    public Page<User> selectPage(@PathVariable Integer pageNum, @PathVariable Integer pageSize) {
         return userService.selectPage(pageNum, pageSize);
     }
 }

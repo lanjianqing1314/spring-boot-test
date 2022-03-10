@@ -10,13 +10,13 @@ import java.io.Serializable;
 
 /**
  * 
+ * @author Administrator
  * @TableName user
  */
 @Data
-@RequiredArgsConstructor(staticName = "of")
-@AllArgsConstructor(access = AccessLevel.PROTECTED)
-@Document
-public class User implements Serializable {
+@EqualsAndHashCode(callSuper = false)
+@Document(language = "chinese")
+public class User {
     /**
      * 
      */
