@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:mysql://106.12.16.5:3308/my_test?serverTimezone=UTC
+    url: jdbc:mysql://myip:3308/my_test?serverTimezone=UTC
     username: root
     password: MyPass_123
     driver-class-name: com.mysql.cj.jdbc.Driver
