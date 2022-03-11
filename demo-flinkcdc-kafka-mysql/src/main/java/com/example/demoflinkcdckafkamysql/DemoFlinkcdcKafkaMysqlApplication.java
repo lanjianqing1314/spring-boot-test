@@ -36,7 +36,7 @@ public class DemoFlinkcdcKafkaMysqlApplication {
                 .password("MyPass_123")
                 .databaseList("my_test")
                 .startupOptions(StartupOptions.latest())
-//                .startupOptions(KafkaOptions.StartupOptions.class)
+                //.startupOptions(KafkaOptions.StartupOptions.class)
                 .deserializer(new DebeziumDeserializationSchema<String>() {
                     //自定义数据解析器
                     @Override
