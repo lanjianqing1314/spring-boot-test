@@ -13,6 +13,7 @@
         <module name="demo-flinkcdc-kafka-mysql" />
         <module name="demo-pool" />
         <module name="demo-interceptor" />
+        <module name="demo-stream" />
         <module name="demo-strategy" />
         <module name="demo-redis-orm" />
         <module name="demo-mybatis-cursor" />

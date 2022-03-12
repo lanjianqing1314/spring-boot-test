@@ -15,5 +15,7 @@
     <file url="file://$PROJECT_DIR$/demo-pool/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-redis-orm/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-strategy/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-stream/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-stream/src/main/resources" charset="UTF-8" />
   </component>
 </project>
