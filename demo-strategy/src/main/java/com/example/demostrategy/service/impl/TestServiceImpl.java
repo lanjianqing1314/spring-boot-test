@@ -17,22 +17,22 @@ import java.util.function.Function;
 @Service
 public class TestServiceImpl implements TestService {
 
-    private static final Map<String, Function<TestBO, Long>> OPERATOR_MAP = new HashMap<>(16);
+    private static final Map<String, Function<TestBO, Long>> STRATEGY_PATTERN_MAP = new HashMap<>(16);
 
     /**
      * 利用策略模式实现计算
      */
     @PostConstruct
-    public void dispatcherInit(){
-        OPERATOR_MAP.put("key1", this::test1);
-        OPERATOR_MAP.put("key2", this::test2);
+    public void strategyPatternInit(){
+        STRATEGY_PATTERN_MAP.put("key1", this::test1);
+        STRATEGY_PATTERN_MAP.put("key2", this::test2);
     }
 
     @Override
     public Long test(String param) {
         TestBO testBO = new TestBO();
         testBO.setValue(100L);
-        Function<TestBO, Long> result = OPERATOR_MAP.get(param);
+        Function<TestBO, Long> result = STRATEGY_PATTERN_MAP.get(param);
         if (result == null) {
             return -1L;
         }

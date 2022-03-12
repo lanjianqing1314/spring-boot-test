@@ -3,8 +3,6 @@ package com.example.demointerceptor.interceptor;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
-import java.io.Serializable;
-
 /**
  * @author 兰建青
  * @title: Result
@@ -14,7 +12,7 @@ import java.io.Serializable;
  */
 @EqualsAndHashCode
 @NoArgsConstructor
-public class Result<T> extends BaseResult implements Serializable {
+public class Result<T> extends BaseResult {
 
     Result(ResultEnum success, T data) {
         this.code = success.getCode();

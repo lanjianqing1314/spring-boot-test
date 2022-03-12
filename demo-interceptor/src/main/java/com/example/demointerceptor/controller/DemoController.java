@@ -13,15 +13,22 @@ import org.springframework.web.bind.annotation.RestController;
  * @date 2021/1/12 10:24
  */
 @RestController
-@ResponseResult
 public class DemoController {
-    @GetMapping("api/demo/success")
-    public String success() {
+
+    @ResponseResult
+    @GetMapping("api/demo/string")
+    public String stringResult() {
         return "hollow boy";
     }
 
+    @GetMapping("api/demo/int")
+    public int intResult() {
+        return 0;
+    }
+
+    @ResponseResult
     @GetMapping("api/demo/error")
-    public void error() {
+    public void errorResult() {
         throw new ResponseResultException("错误啦");
     }
 }

@@ -5,7 +5,6 @@ import com.example.demointerceptor.interceptor.ResultEnum;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
-import java.io.Serializable;
 import java.util.Objects;
 
 /**
@@ -17,7 +16,7 @@ import java.util.Objects;
  */
 @NoArgsConstructor
 @EqualsAndHashCode
-public class ErrorResult extends BaseResult implements Serializable {
+public class ErrorResult extends BaseResult {
 
     public ErrorResult(String data) {
         this.code = ResultEnum.ERROR.getCode();

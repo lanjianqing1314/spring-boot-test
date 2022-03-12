@@ -1,6 +1,8 @@
 package com.example.demointerceptor.interceptor;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 
@@ -12,6 +14,8 @@ import java.io.Serializable;
  * @date 2021/1/12 11:44
  */
 @Data
+@EqualsAndHashCode
+@NoArgsConstructor
 public class BaseResult<T> implements Serializable {
     protected Integer code;
     protected String msg;
