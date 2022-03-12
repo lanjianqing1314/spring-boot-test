@@ -4,6 +4,8 @@
     <file url="file://$PROJECT_DIR$/demo-degrade/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-flinkcdc-kafka-mysql/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-flinkcdc-kafka-mysql/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-flowable/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-flowable/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-interceptor/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-interceptor/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-lambda/src/main/java" charset="UTF-8" />

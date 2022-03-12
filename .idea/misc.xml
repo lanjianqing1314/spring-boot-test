@@ -15,6 +15,7 @@
         <option value="$PROJECT_DIR$/demo-interceptor/pom.xml" />
         <option value="$PROJECT_DIR$/demo-lambda/pom.xml" />
         <option value="$PROJECT_DIR$/demo-stream/pom.xml" />
+        <option value="$PROJECT_DIR$/demo-flowable/pom.xml" />
       </list>
     </option>
   </component>
