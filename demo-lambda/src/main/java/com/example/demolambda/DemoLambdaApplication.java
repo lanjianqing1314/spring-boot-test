@@ -1,16 +1,14 @@
-package com.example.demodegrade;
+package com.example.demolambda;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-/**
- * @author Administrator
- */
 @SpringBootApplication
-public class DemoDegradeApplication {
+public class DemoLambdaApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(DemoDegradeApplication.class, args);
+        SpringApplication.run(DemoLambdaApplication.class, args);
+        new Thread(()->System.out.println(123)).start();
     }
 
 }

@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="demo-mybatis-webflux" />
         <module name="demo-degrade" />
+        <module name="demo-lambda" />
         <module name="demo-flinkcdc-kafka-mysql" />
         <module name="demo-pool" />
         <module name="demo-interceptor" />

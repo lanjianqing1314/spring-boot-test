@@ -13,6 +13,7 @@
         <option value="$PROJECT_DIR$/demo-flinkcdc-kafka-mysql/pom.xml" />
         <option value="$PROJECT_DIR$/demo-redis-orm/pom.xml" />
         <option value="$PROJECT_DIR$/demo-interceptor/pom.xml" />
+        <option value="$PROJECT_DIR$/demo-lambda/pom.xml" />
       </list>
     </option>
   </component>
