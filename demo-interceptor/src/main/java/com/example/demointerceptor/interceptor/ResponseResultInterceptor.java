@@ -1,5 +1,6 @@
 package com.example.demointerceptor.interceptor;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.HandlerInterceptor;
@@ -16,6 +17,7 @@ import java.lang.reflect.Method;
  * @date 2021/1/12 9:27
  */
 @Component
+@Slf4j
 public class ResponseResultInterceptor implements HandlerInterceptor {
 
     private static final String RESPONSE_RESULT_ANN = String.valueOf(ResponseResultEnum.RESPONSE_RESULT_ANN);

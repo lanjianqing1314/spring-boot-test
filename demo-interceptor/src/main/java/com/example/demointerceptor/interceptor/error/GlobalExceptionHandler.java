@@ -1,5 +1,6 @@
 package com.example.demointerceptor.interceptor.error;
 
+import com.example.demointerceptor.interceptor.ResultEnum;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.context.properties.bind.BindException;
 import org.springframework.http.HttpStatus;
@@ -7,6 +8,7 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
+import org.springframework.web.servlet.NoHandlerFoundException;
 
 /**
  * @author 兰建青
@@ -26,6 +28,7 @@ public class GlobalExceptionHandler {
      */
     @ExceptionHandler(ResponseResultException.class)
     public ErrorResult responseResultException(ResponseResultException e) {
+        log.error("自定义异常！原因是: 【{}】", e.getMessage());
         return ErrorResult.globalFail(e);
     }
 
@@ -37,8 +40,22 @@ public class GlobalExceptionHandler {
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
     @ExceptionHandler(Throwable.class)
     public ErrorResult throwable(Throwable e) {
+        e.printStackTrace();
         log.error("发生未知异常！原因是: 【{}】", e.getMessage());
         ErrorResult errorResult = ErrorResult.fail(e.getMessage());
+        return errorResult;
+    }
+
+    /**
+     * 404异常
+     * @param e NoHandlerFoundException
+     * @return ErrorResult
+     */
+    @ResponseStatus(HttpStatus.NOT_FOUND)
+    @ExceptionHandler(NoHandlerFoundException.class)
+    public ErrorResult noHandlerFoundException(NoHandlerFoundException e) {
+        log.error("404异常！原因是: 【{}】", e.getMessage());
+        ErrorResult errorResult = ErrorResult.fail(ResultEnum.NOT_FOUND);
         return errorResult;
     }
 

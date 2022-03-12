@@ -16,7 +16,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public enum ResultEnum {
     SUCCESS(200, "成功"),
-    ERROR(500, "系统错误");
+    ERROR(500, "系统错误"),
+    NOT_FOUND(404, "api不存在");
 
     private Integer code;
     private String msg;

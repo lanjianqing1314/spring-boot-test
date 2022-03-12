@@ -39,4 +39,8 @@ public class ErrorResult extends BaseResult {
     public static ErrorResult fail(String data) {
         return new ErrorResult(data);
     }
+
+    public static ErrorResult fail(ResultEnum resultEnum) {
+        return new ErrorResult(resultEnum);
+    }
 }
