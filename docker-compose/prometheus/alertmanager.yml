@@ -1,8 +1,8 @@
 global:
   smtp_smarthost: 'smtp.qq.com:456'　　#qq服务器
-  smtp_from: 'mylan1314@qq.com'　　　　　　　　#发邮件的邮箱
-  smtp_auth_username: 'mylan1314@qq.com'　　#发邮件的邮箱用户名，也就是你的邮箱
-  smtp_auth_password: '1314LLan'　　　　　　　　#发邮件的邮箱密码
+  smtp_from: 'xxx@qq.com'　　　　　　　　#发邮件的邮箱
+  smtp_auth_username: 'xxx@qq.com'　　#发邮件的邮箱用户名，也就是你的邮箱
+  smtp_auth_password: '密码'　　　　　　　　#发邮件的邮箱密码
   smtp_require_tls: false　　　　　　　　#不进行tls验证
 
 route:
@@ -15,4 +15,4 @@ route:
 receivers:
 - name: 'live-monitoring'
   email_configs:
-  - to: 'mylan1314@qq.com'　　　　　　　　#收邮件的邮箱
+  - to: 'xxx@qq.com'　　　　　　　　#收邮件的邮箱
