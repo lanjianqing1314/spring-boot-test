@@ -8,7 +8,7 @@ global:
 alerting:
   alertmanagers:
   - static_configs:
-    - targets: ['182.61.134.105:9093']
+    - targets: ['你的服务器ip:9093']
       # - alertmanager:9193
 
 # Load rules once and periodically evaluate them according to the global 'evaluation_interval'.
@@ -23,13 +23,13 @@ scrape_configs:
   # The job name is added as a label `job=<job_name>` to any timeseries scraped from this config.
   - job_name: 'prometheus'
     static_configs:
-- targets: ['182.61.134.105:9090']
+- targets: ['你的服务器ip:9090']
 
   - job_name: 'cadvisor'
     static_configs:
-    - targets: ['182.61.134.105:8080']
+    - targets: ['你的服务器ip:8080']
 
   - job_name: 'node'
     scrape_interval: 8s
     static_configs:
-      - targets: ['182.61.134.105:9100']
+      - targets: ['你的服务器ip:9100']
